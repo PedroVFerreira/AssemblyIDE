@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'Assembly';
+    src: url(../fonts/Assembly.ttf);
+}
+
+.code-box {
+    width: 100%;
+    height: calc(100% - 60px);
+    background: black;
+    color: white;
+    /* font-family:  'Assembly'; */
+    padding: 20px;
+    font-weight: 700;
+    outline: none;
+    /*border-radius: 15px;*/
+    font-size: 20px;
+    resize: none;
+}
+.code-box-debugger {
+    width: 100%;
+    height: calc(100% - 60px);
+    background: black;
+    color: white;
+    /* font-family:  'Assembly'; */
+    /*padding-top: 20px;*/
+    font-weight: 700;
+    outline: none;
+    /*border-radius: 0 15px 15px 0 ;*/
+    font-size: 20px;
+    resize: none;
+}
+.code-box-debugger > div {
+    width:100%;
+    height:30px;
+    text-align:left;
+}
+
+.code-box-debugger > div.active {
+    background:red;
+}
+.code-box-debugger > div > span {
+    float: left;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #e7e7e7;
+    margin-right: 20px;
+    color: #4a4a4a;
+}
+.code-box-debugger > div > span.active > div {
+    width: 15px;
+    height: 15px;
+    margin: 7.5px;
+    border-radius: 100%;
+    background: red;
+    #8c8c8c
+}
+
+.controls-box{
+    width: 100%;
+    height: 50px;
+    background: #e7e7e7;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    text-align:left;
+}
+.controls-box>div{
+    width:auto;
+    float:left;
+    text-align:left;
+    padding:13px;
+    height: 50px;
+    border: 1px solid;
+    cursor:pointer;
+}
+.controls-box>div>span{
+    margin-left: 5px;
+    top: 3px;
+}
+.controls-box>div:first-child{
+    border-radius: 15px 0 0 15px;
+}
+
+.controls-box>div.loadding{
+    border-radius:0;
+    width:100%;
+    text-align:center;
+    border:none;
+}
+.information-box{
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    background: #a15206;
+    border-radius: 15px;
+    padding: 20px;
+}
+.information-box table {
+    /* width:100%; */
+    height: auto;
+    min-width: 120px;
+    float: left;
+}
+.information-box table > tbody > tr {
+    height: 20px;
+    border-top: solid 3px #a15206;
+}
+.information-box table > tbody > tr > td {
+    padding: 3px 10px 3px 3px;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+}
+.information-box table > tbody > tr > td.data {
+    background: black;
+    color: white;
+    padding: 3px 5px;
+    text-align: center;
+}
+
+.information-box.information-memoria {
+    background:white;
+}
+.information-box.information-memoria table {
+    width: 100%;
+}
+.information-memoria tr {
+    height: 20px;
+    border: none !important;
+}
+.information-memoria td {
+    text-align: left;
+    padding: 10px !important;
+    border: solid 1px #ccc !important;
+    font-size:15px !important;
+}
+
+.information-memoria tr:first-child td{
+    text-align: center;
+}
+.barramentos-box{
+    padding: 7px 10px 7px 20px;
+    font-size: 15px;
+}
+.barramento{
+    width: 40px;
+    line-height: 36px; 
+    height: 40px;
+    background: black;
+    color: white;
+    float: left;
+    margin: 0 5px 5px 5px;
+}
+.barramento.active{
+    color: black;
+    background: white;
+    
+}
+.erro-message{
+    color:red;
+    font-weight:700;
+}

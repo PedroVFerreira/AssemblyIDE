@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Assembly';
+    src: url(../fonts/Assembly.ttf);
+}
+
+.code-box{
+    width: 100%;
+    height: calc(100% - 60px);
+    background: black;
+    color: white;
+    /* font-family:  'Assembly'; */
+    padding:20px;
+    font-weight: 700;
+    outline: none;
+    border-radius: 15px;
+    font-size: 20px;
+    resize: none;
+}
+
+.controls-box{
+    width: 100%;
+    height: 50px;
+    background: #e7e7e7;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+.information-box{
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    background: #a15206;
+    border-radius: 15px;
+    padding: 20px;
+}
+table{
+    /* width:100%; */
+    height: auto;
+    min-width: 120px;
+    float: left;
+}
+table>tbody>tr{
+    height: 20px;
+    
+    border-top: solid 3px #a15206;
+}
+table>tbody>tr>td{
+    padding:3px 10px 3px 3px;
+    color:black;
+    font-weight: 700;
+    font-size: 20px;
+
+}
+table>tbody>tr>td.data{
+    background: black;
+    color: white;
+    padding:3px 5px;
+    text-align: center;
+
+}
+.barramentos-box{
+    padding: 7px 10px 7px 20px;
+    font-size: 15px;
+}
+.barramento{
+    width: 40px;
+    line-height: 36px; 
+    height: 40px;
+    background: black;
+    color: white;
+    float: left;
+    margin: 0 5px 5px 5px;
+}
+.barramento.active{
+    color: black;
+    background: white;
+    
+}

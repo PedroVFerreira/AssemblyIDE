@@ -1,0 +1,14 @@
+﻿<div class="controls-box">
+    <div *ngIf="state == 'Codding'" (click)="Rodar()">
+        Rodar <span class="oi oi-play-circle"></span>
+    </div>
+    <div *ngIf="state == 'Loadding'" class="loadding">
+        Carregando <span class="oi oi-reload"></span>
+    </div>
+    <div *ngIf="state == 'Debugging'" (click)="Proximo()">
+        Proximo <span class="oi oi-action-redo"></span>
+    </div>
+    <div *ngIf="state == 'Debugging'" (click)="Parar()">
+        Parar <span class="oi oi-media-stop"></span>
+    </div>
+</div>

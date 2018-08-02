@@ -1,0 +1,7 @@
+﻿<div class="code-box-debugger" >
+    <div *ngFor="let l of code; let i = index" [class.active]="i == currentLine">
+        <span *ngIf="i != currentLine" >{{i + 1}}</span>
+        <span *ngIf="i == currentLine" class="active"><div></div></span>
+        {{l}}
+    </div>
+</div>
